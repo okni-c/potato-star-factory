@@ -1,27 +1,49 @@
 # PotatoStarFactory
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.9.
+## Goal of the game
+- **Cultivate a solar system of mining and farming potatos, enough to power a star.**
 
-## Development server
+## Planet Types
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Farm Planets
 
-## Code scaffolding
+- **Hot House**:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  - **Description**: Speed modifier on potato growth.
+  - **Effect**: Faster production of potatoes.
 
-## Build
+- **Fungal**:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+  - **Description**: A unique ecosystem where potatoes grow alongside large, mushroom-like plants.
+  - **Effect**: Size modifier on potato output. More power output per potato.
 
-## Running unit tests
+- **Earth-like**:
+  - **Description**: Standard earth potato.
+  - **Effect**: Standard potato output and power.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Mining Planets
 
-## Running end-to-end tests
+- **Zinc-Rich Planet**:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+  - **Description**: A rocky world abundant in zinc deposits.
+  - **Resources**: Higher average yields of zinc.
+  - **Gameplay Mechanic**: Players can establish specialized mining stations that enhance zinc extraction rates.
 
-## Further help
+- **Copper-Rich Planet**:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  - **Description**: A planet with extensive copper ore veins.
+  - **Resources**: Produces significant quantities of copper.
+  - **Gameplay Mechanic**: Mining operations can be upgraded to improve efficiency and reduce energy consumption.
+
+- **Elemental Mine (Lottery)**:
+
+  - **Description**: A planet rich in elemental minerals (like sulfur or phosphorus).
+  - **Resources**: Yields both zinc and copper in random amounts, with occasional elemental bonuses.
+  - **Gameplay Mechanic**: Players may experience fluctuating yields, creating a risk-reward scenario where they can mine for potential high rewards.
+
+- **Standard Planet**
+
+  - **Description**: A typical rocky planet with abundant mineral resources.
+  - **Resources**: Consistent yields of zinc and copper, providing reliable quantities for production.
+  - **Gameplay Mechanic**: Players get reliable yields, standard mining rates.
+

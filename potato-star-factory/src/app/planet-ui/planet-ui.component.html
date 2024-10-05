@@ -1,0 +1,20 @@
+<div class="planet-container">
+  <h2>Potato Counter: {{ potatoCounter }}</h2>
+  <h2>Total Voltage: {{ totalVoltage.toFixed(1) }} V</h2>
+  <div class="continent" *ngFor="let continent of continents">
+    <h3>{{ continent.name }}</h3>
+    <div class="grid">
+      <div
+        class="grid-square"
+        *ngFor="let square of continent.squares; let i = index"
+        (click)="plantPotato(continent.name, i)"
+        [class]="{ planted: square.planted }"
+      >
+        <span *ngIf="square.readyForHarvest" (click)="harvestPotato(continent.name, i)">🥔</span>
+        <!-- Potato emoji when ready -->
+        <span *ngIf="square.planted && !square.readyForHarvest">🌱</span>
+        <!-- Seedling emoji when planted -->
+      </div>
+    </div>
+  </div>
+</div>
